@@ -23,11 +23,4 @@ mybatis-plus:
     use-generated-keys: true
     cache-enabled: true
   mapper-locations: classpath*:mapper/**/*Mapper.xml
-# springdoc配置
-springdoc:
-  api-docs:
-    enabled: true
-    path: /api-docs
-  swagger-ui:
-    enabled: true
-    path: /swagger-ui.html
+

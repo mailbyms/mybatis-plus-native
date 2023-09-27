@@ -1,9 +1,9 @@
-package work.lichong.test.service;
+package com.gyjian.test.service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.gyjian.test.entity.User;
+import com.gyjian.test.mapper.UserMapper;
 import org.springframework.stereotype.Service;
-import work.lichong.test.entity.User;
-import work.lichong.test.mapper.UserMapper;
 
 @Service
 public class UserService extends ServiceImpl<UserMapper, User> {

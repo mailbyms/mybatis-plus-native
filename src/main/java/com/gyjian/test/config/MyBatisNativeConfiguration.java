@@ -1,9 +1,4 @@
-/*
- * Copyright 2023 李冲. All rights reserved.
- *
- */
-
-package work.lichong.test.config;
+package com.gyjian.test.config;
 
 import org.apache.commons.logging.LogFactory;
 import org.apache.ibatis.annotations.DeleteProvider;
@@ -67,11 +62,6 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * @author 李冲
- * @see <a href="https://lichong.work">李冲博客</a>
- * @since 2023/7/27 23:01
- */
 @Configuration(proxyBeanMethods = false)
 @ImportRuntimeHints(MyBatisNativeConfiguration.MyBaitsRuntimeHintsRegistrar.class)
 public class MyBatisNativeConfiguration {

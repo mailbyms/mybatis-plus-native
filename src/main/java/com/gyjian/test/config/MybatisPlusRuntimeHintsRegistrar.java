@@ -1,9 +1,4 @@
-/*
- * Copyright 2023 李冲. All rights reserved.
- *
- */
-
-package work.lichong.test.config;
+package com.gyjian.test.config;
 
 import com.baomidou.mybatisplus.core.MybatisXMLLanguageDriver;
 import com.baomidou.mybatisplus.core.conditions.AbstractWrapper;
@@ -32,11 +27,6 @@ import org.springframework.context.annotation.ImportRuntimeHints;
 
 import java.util.Collections;
 
-/**
- * @author 李冲
- * @see <a href="https://lichong.work">李冲博客</a>
- * @since 2023/7/27 23:01
- */
 @Configuration(proxyBeanMethods = false)
 @ImportRuntimeHints(MybatisPlusRuntimeHintsRegistrar.class)
 public class MybatisPlusRuntimeHintsRegistrar implements RuntimeHintsRegistrar {

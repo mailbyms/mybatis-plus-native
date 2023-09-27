@@ -5,13 +5,11 @@ server:
 
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:test
-    username: root
-    password: test
-  sql:
-    init:
-      mode: always
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_URL:127.0.0.1:3306/sampledb?serverTimezone=Asia/Shanghai}
+    username: ${DB_USER:demouser}
+    password: ${DB_PASSWD:demopasswd}
+
 logging:
   level:
     com.baomidou.mybatisplus.samples.quickstart: debug

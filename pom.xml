@@ -34,6 +34,12 @@
             <version>3.5.4-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.graalvm.sdk</groupId>
+            <artifactId>graal-sdk</artifactId>
+            <version>23.1.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <dependency>
             <groupId>com.mysql</groupId>
@@ -80,8 +86,9 @@
                 <groupId>org.graalvm.buildtools</groupId>
                 <artifactId>native-maven-plugin</artifactId>
                 <configuration>
-                    <buildArgs >
+                    <buildArgs combine.children="append">
                         <buildArg>-H:+AddAllCharsets</buildArg>
+                        <buildArg>--features=com.gyjian.test.config.LambdaRegistrationFeature</buildArg>
                     </buildArgs>
                 </configuration>
             </plugin>
